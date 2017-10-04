@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.johnduran.jganalytics.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/eCorreoL"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_weight="0.2"
+            android:inputType="textEmailAddress"
+            android:hint="@string/correo"
+            android:textColor="@color/dodgerblue"
+            android:textColorHint="@color/silver" />
+
+        <EditText
+            android:id="@+id/eContrasenaL"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_weight="0.2"
+            android:textColorHint="@color/silver"
+            android:textColor="@color/dodgerblue"
+            android:inputType="textPassword"
+            android:hint="@string/contrasena" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button"
+                android:onClick="iniciar"
+                android:textSize="15dp"
+                android:text="@string/iniciar"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal"
+            android:onClick="Registrese"
+            android:text="@string/registrese"
+            android:textColor="@color/lawngreen"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">JG Analytics</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="iniciar">Iniciar sesión</string>
+    <string name="registrese">Regístrese</string>
+    <string name="repcontrasena">Repetir contraseña</string>
+    <string name="registrar">Registrar</string>
+    <string name="perfil">Mi Perfil</string>
+    <string name="mCerrar">Cerrar sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="principal">Principal</string>
+    <string name="facebook_app_id">119834122067424</string>
+    <string name="fb_login_protocol_scheme">fb119834122067424</string>
+
+</resources>
